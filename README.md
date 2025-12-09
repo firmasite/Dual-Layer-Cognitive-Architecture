@@ -1,66 +1,94 @@
-# Specialized AI Agent: Dual-Layer Cognitive Architecture
+# 🧬 Dual-Layer Cognitive Architecture
 
-This repository hosts the **DUAL-LAYER COGNITIVE ARCHITECTURE** for a specialized AI agent, designed to enhance reasoning through structured personas and prompting techniques. It makes the full instruction set (from `instructions.txt`) and knowledge base of 10 prompting techniques (from `techs.txt`) publicly available for developers, researchers, and AI enthusiasts.
+> **Turn your generic AI chatbot into a Senior Expert with structured reasoning.**
 
-## Overview
-The architecture operates in two layers [Layer 1 and Layer 2 from instructions.txt]:
+Most AI models (ChatGPT, Claude, Gemini) rush to answer with the first thing that comes to mind. This project provides a "System Prompt" and "Knowledge Base" that forces the AI to **stop, think, and choose the right tool** before answering.
 
-- **Layer 1: Identity Engine (Technique 1 - MANDATORY)**: Analyzes domain, adopts a persona (e.g., "Senior Domain Expert with 20+ Years experience"), and sets 3 immutable rules. This defines the "Operating System" for every interaction.
-- **Layer 2: Logic Router**: Selects ONE secondary technique from a table of 9 options (Tech 2-10) based on user intent (e.g., Fact Checking → Tech 2: Chain-of-Verification).
+## 🧐 How It Works
+It uses a strict **Dual-Layer System**:
+1.  **Layer 1 (The Boss):** The AI adopts a specific expert persona with hard constraints (e.g., "Senior Architect," "Security First").
+2.  **Layer 2 (The Toolkit):** The AI automatically selects **one** of 10 advanced thinking techniques (like *Chain-of-Verification* or *Structured Thinking*) from its library to solve your specific problem.
 
-Followed by an **Execution Loop** (Init → Select → Filter → Output) and a strict **OUTPUT FORMAT** with sections like Active Persona, Logic Applied, etc. [Full details in instructions.txt].
+## 📂 The Files
+*   **`instructions.txt`**: The "Operating System." This tells the AI *how* to behave and structure its response.
+*   **`techs.txt`**: The "Library." This contains 10 specific templates and examples the AI uses to do the work.
 
-The knowledge base includes **10 Prompting Techniques** (Tech 1-10 from techs.txt), each with templates and examples for advanced AI interactions:
-- Tech 1: Role-Based Constraint Prompting [Template and example in examples/tech1-role-based.md].
-- Tech 2: Chain-of-Verification (CoVe) [Template and example in examples/tech2-cove.md].
-- ... (Tech 3-10 similarly modularized for easy access).
+---
 
-## Why This Repo?
-- **Public Accessibility**: Exact replicas of source materials for transparency.
-- **Modularity**: Mirrors the architecture's layered design—fork and adapt for your AI agents.
-- **Use Cases**: Integrate into LLMs for better outputs in domains like coding, strategy, or creative tasks [Derived from technique selection table in instructions.txt].
+## 🚀 Installation Guide
 
-## Getting Started
+Choose your platform below. You do not need to code; just copy and paste.
 
-1. Open `instructions.txt` for the custom instructions and `techs.txt` for the knowledge base.
+### 🟢 ChatGPT (OpenAI)
 
-2. Integrate into AI Platforms: Copy-paste key content from these files into each platform's custom instructions
+**Method A: Create a Custom GPT (Best for Plus/Team Users)**
+1.  Go to **Explore GPTs** → **Create**.
+2.  **Name:** Dual-Layer Agent.
+3.  **Instructions:** Copy & paste the full content of `instructions.txt`.
+4.  **Knowledge:** Upload the `techs.txt` file.
+5.  **Save** and start chatting.
 
-   ### Google Gemini
-   - Go to gemini.google.com > Explore Gems > New Gem
-   - Name it "Dual-Layer Agent".
-   - In instructions: Paste full content from instructions.txt and Upload the techs.txt to knowledge base section.
-   - Save and chat with the Gem.
+**Method B: Custom Instructions (Free Users)**
+*Free accounts have character limits, so we paste the core logic only.*
+1.  Click your **Profile Icon** → **Customize ChatGPT**.
+2.  **Top Box (What to know):** Paste the content of `instructions.txt`.
+3.  **Bottom Box (How to respond):** Paste the first 3 techniques from `techs.txt` (or as many as fit).
+4.  **Note:** Since you cannot upload files, if you need a specific technique later, just paste it into the chat manually.
 
-   ### ChatGPT (OpenAI)
-   - Go to Settings > Personalization > Custom Instructions
-   - Enable customization.
-   - In "What would you like ChatGPT to know about you?": Paste the Layer 1 Identity Engine from instructions.txt.
-   - In "How would you like ChatGPT to respond?": Paste the Layer 2 Logic Router table and Output Format from instructions.txt, plus Tech 1-10 from techs.txt (or top 5 if token-limited).
-   - Save and test in a new chat.
+---
 
-   ### Claude AI (Anthropic)
-   - Create a custom Skill: In Claude dashboard, go to Skills > New Skill<grok-card data-id="135d06" data-type="citation_card"></grok-card><grok-card data-id="101a6c" data-type="citation_card"></grok-card>.
-   - Prepare a folder with `instructions.txt` and `techs.txt` as files; add a README.md summarizing the framework.
-   - Zip the folder and upload via the interface.
-   - Assign the Skill to a project or conversation for persistent use.
+### 🟠 Claude (Anthropic)
 
+**Method A: Projects (Best for Claude Pro Users)**
+1.  Go to **Projects** → **Create Project**.
+2.  **Name:** Dual-Layer Agent.
+3.  **Set Custom Instructions:** Paste the content of `instructions.txt`.
+4.  **Project Knowledge:** Click "Add Content" and upload `techs.txt`.
+5.  Start a chat inside this Project.
 
-   ### Grok (xAI)
-   - Visit grok.x.ai > Settings > Customize Grok<grok-card data-id="1725e1" data-type="citation_card"></grok-card><grok-card data-id="724dd0" data-type="citation_card"></grok-card>.
-   - In custom fields: Add "What to know": Layer 1 from instructions.txt; "How to respond": Full framework and techniques from techs.txt (summarize if over limit).
-   - Select Custom mode and save for all sessions.
+**Method B: The "Chat Attachment" Way (Free Users)**
+1.  Start a new chat.
+2.  Drag and drop **both** `instructions.txt` and `techs.txt` into the chat window.
+3.  Type this prompt: *"Read these files. Adopt the persona in instructions.txt and use the library in techs.txt to answer my future questions."*
 
-3. Experiment: Ask a vague question like "Should I use Python or Go for my backend?"
+---
 
-Expected Result: It should adopt a "Backend Architect" persona (Layer 1) and automatically select Technique 9 (Multi-Perspective) or Technique 4 (Structured Thinking) to give you a nuanced answer.
+### 💎 Google Gemini
 
+**Method A: Gems (Best for Gemini Advanced)**
+1.  Go to **Gem Manager** → **New Gem**.
+2.  **Name:** Dual-Layer Agent.
+3.  **Instructions:** Paste the content of `instructions.txt`.
+4.  **Knowledge:** Click "Add Knowledge" and upload `techs.txt`.
+5.  Create and Chat.
 
-## Contributing
-- Suggest new techniques via Issues.
-- Any suggestions are welcome.
+**Method B: The Context Paste (Free Users)**
+1.  Open a fresh chat.
+2.  Copy **ALL** text from `instructions.txt` and paste it.
+3.  Type: *"I am now providing your Knowledge Base."*
+4.  Copy **ALL** text from `techs.txt` and paste it.
+5.  Start asking your questions.
 
-## License
-MIT—freely use, modify, and share.
+---
 
-Questions? Open an Issue!
+### ⚫ Grok (xAI)
+
+1.  Go to the **Grok** tab on X.
+2.  Locate **Grok Settings** or **System Prompt** (often in "Configure" or "Custom Mode").
+3.  **System Prompt:** Paste the content of `instructions.txt`.
+4.  **Context:** Since Grok file uploads vary by version, append the text of `techs.txt` directly to the bottom of your System Prompt (if space allows), or paste it as the very first message in your chat.
+
+---
+
+## 🎮 How to Use It
+Once set up, you don't need to do anything special. Just ask a normal question.
+
+**User:** *"Should I use Python or Go for a high-frequency trading bot?"*
+
+**The AI's Process (Automated):**
+1.  **Layer 1:** Activates "Senior FinTech Engineer" persona.
+2.  **Layer 2:** Detects this is a comparison strategy. Selects **Tech 9: Multi-Perspective Prompting**.
+3.  **Output:** Delivers a structured analysis covering Latency (Tech), Developer Velocity (Business), and Stability (Risk).
+
+## 📄 License
+MIT License. Free to use, modify, and share.
