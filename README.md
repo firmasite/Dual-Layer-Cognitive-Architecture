@@ -22,6 +22,7 @@ Choose your platform below. You do not need to code; just copy and paste.
 ### 💎 Google Gemini
 
 **Method A: Public Gem**
+
 https://gemini.google.com/gem/1qIsLlu0ZEkpawNfNRawG5AG4tCILqnBl?usp=sharing
 
 **Method B: Custom Gem (Best for Gemini Advanced)**
@@ -78,6 +79,7 @@ https://gemini.google.com/gem/1qIsLlu0ZEkpawNfNRawG5AG4tCILqnBl?usp=sharing
 ### ⚫ Grok (xAI)
 
 **Method A: Public Project**
+
 https://grok.com/project/faa3a8b1-85f7-4cca-9c9b-a0bb290dae32?tab=sources
 
 **Method B: Custom Project**
