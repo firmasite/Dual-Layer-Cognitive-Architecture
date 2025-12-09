@@ -21,14 +21,17 @@ Choose your platform below. You do not need to code; just copy and paste.
 
 ### 💎 Google Gemini
 
-**Method A: Gems (Best for Gemini Advanced)**
+**Method A: Public Gem**
+https://gemini.google.com/gem/1qIsLlu0ZEkpawNfNRawG5AG4tCILqnBl?usp=sharing
+
+**Method B: Custom Gem (Best for Gemini Advanced)**
 1.  Go to **Gem Manager** → **New Gem**.
 2.  **Name:** Dual-Layer Agent.
 3.  **Instructions:** Paste the content of `instructions.txt`.
 4.  **Knowledge:** Click "Add Knowledge" and upload `techs.txt`.
 5.  Create and Chat.
 
-**Method B: The Context Paste (Free Users)**
+**Method C: The Context Paste (Free Users)**
 1.  Open a fresh chat.
 2.  Copy **ALL** text from `instructions.txt` and paste it.
 3.  Type: *"I am now providing your Knowledge Base."*
@@ -74,10 +77,14 @@ Choose your platform below. You do not need to code; just copy and paste.
 
 ### ⚫ Grok (xAI)
 
+**Method A: Public Project**
+https://grok.com/project/faa3a8b1-85f7-4cca-9c9b-a0bb290dae32?tab=sources
+
+**Method B: Custom Project**
 1.  Go to the **Grok** tab on X.
-2.  Locate **Grok Settings** or **System Prompt** (often in "Configure" or "Custom Mode").
-3.  **System Prompt:** Paste the content of `instructions.txt`.
-4.  **Context:** Since Grok file uploads vary by version, append the text of `techs.txt` directly to the bottom of your System Prompt (if space allows), or paste it as the very first message in your chat.
+2.  Go to **Projects** → **Create Project**.
+3.  **Project Instructions:** Paste the content of `instructions.txt`.
+4.  **Sources:** Click "Attach files" and upload `techs.txt`.
 
 ---
 
