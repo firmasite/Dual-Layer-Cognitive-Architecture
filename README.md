@@ -102,3 +102,7 @@ Once set up, you don't need to do anything special. Just ask a normal question.
 
 ## 📄 License
 MIT License. Free to use, modify, and share.
+
+## Special Thanks
+Special thanks to Louis Gleeson for first prompting techniques;
+https://x.com/aigleeson
