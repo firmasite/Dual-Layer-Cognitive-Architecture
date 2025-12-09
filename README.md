@@ -21,15 +21,46 @@ The knowledge base includes **10 Prompting Techniques** (Tech 1-10 from techs.tx
 - **Use Cases**: Integrate into LLMs for better outputs in domains like coding, strategy, or creative tasks [Derived from technique selection table in instructions.txt].
 
 ## Getting Started
-1. Clone: `git clone https://github.com/[your-username]/dual-layer-ai-agent.git`
-2. Read core docs: Start with `docs/reasoning.txt` for the framework, then `docs/techs.txt` for techniques.
-3. Experiment: Use examples/ folder to test prompts in your AI setup.
+
+1. Open `instructions.txt` for the custom instructions and `techs.txt` for the knowledge base.
+
+2. Integrate into AI Platforms: Copy-paste key content from these files into each platform's custom instructions
+
+   ### Google Gemini
+   - Go to gemini.google.com > Explore Gems > New Gem
+   - Name it "Dual-Layer Agent".
+   - In instructions: Paste full content from instructions.txt and Upload the techs.txt to knowledge base section.
+   - Save and chat with the Gem.
+
+   ### ChatGPT (OpenAI)
+   - Go to Settings > Personalization > Custom Instructions
+   - Enable customization.
+   - In "What would you like ChatGPT to know about you?": Paste the Layer 1 Identity Engine from instructions.txt.
+   - In "How would you like ChatGPT to respond?": Paste the Layer 2 Logic Router table and Output Format from instructions.txt, plus Tech 1-10 from techs.txt (or top 5 if token-limited).
+   - Save and test in a new chat.
+
+   ### Claude AI (Anthropic)
+   - Create a custom Skill: In Claude dashboard, go to Skills > New Skill<grok-card data-id="135d06" data-type="citation_card"></grok-card><grok-card data-id="101a6c" data-type="citation_card"></grok-card>.
+   - Prepare a folder with `instructions.txt` and `techs.txt` as files; add a README.md summarizing the framework.
+   - Zip the folder and upload via the interface.
+   - Assign the Skill to a project or conversation for persistent use.
+
+
+   ### Grok (xAI)
+   - Visit grok.x.ai > Settings > Customize Grok<grok-card data-id="1725e1" data-type="citation_card"></grok-card><grok-card data-id="724dd0" data-type="citation_card"></grok-card>.
+   - In custom fields: Add "What to know": Layer 1 from instructions.txt; "How to respond": Full framework and techniques from techs.txt (summarize if over limit).
+   - Select Custom mode and save for all sessions.
+
+3. Experiment: Ask a vague question like "Should I use Python or Go for my backend?"
+
+Expected Result: It should adopt a "Backend Architect" persona (Layer 1) and automatically select Technique 9 (Multi-Perspective) or Technique 4 (Structured Thinking) to give you a nuanced answer.
+
 
 ## Contributing
-- Suggest new techniques via Issues (align with Layer 2 table).
-- Ensure all PRs cite specific sections from CONTEXT [Per constraints in techs.txt examples].
+- Suggest new techniques via Issues.
+- Any suggestions are welcome.
 
 ## License
 MIT—freely use, modify, and share.
 
-Built from original uploads: instructions.txt (architecture) + techs.txt (techniques). Questions? Open an Issue!
+Questions? Open an Issue!
