@@ -19,6 +19,24 @@ It uses a strict **Dual-Layer System**:
 
 Choose your platform below. You do not need to code; just copy and paste.
 
+### 💎 Google Gemini
+
+**Method A: Gems (Best for Gemini Advanced)**
+1.  Go to **Gem Manager** → **New Gem**.
+2.  **Name:** Dual-Layer Agent.
+3.  **Instructions:** Paste the content of `instructions.txt`.
+4.  **Knowledge:** Click "Add Knowledge" and upload `techs.txt`.
+5.  Create and Chat.
+
+**Method B: The Context Paste (Free Users)**
+1.  Open a fresh chat.
+2.  Copy **ALL** text from `instructions.txt` and paste it.
+3.  Type: *"I am now providing your Knowledge Base."*
+4.  Copy **ALL** text from `techs.txt` and paste it.
+5.  Start asking your questions.
+
+---
+
 ### 🟢 ChatGPT (OpenAI)
 
 **Method A: Create a Custom GPT (Best for Plus/Team Users)**
@@ -53,23 +71,6 @@ Choose your platform below. You do not need to code; just copy and paste.
 
 ---
 
-### 💎 Google Gemini
-
-**Method A: Gems (Best for Gemini Advanced)**
-1.  Go to **Gem Manager** → **New Gem**.
-2.  **Name:** Dual-Layer Agent.
-3.  **Instructions:** Paste the content of `instructions.txt`.
-4.  **Knowledge:** Click "Add Knowledge" and upload `techs.txt`.
-5.  Create and Chat.
-
-**Method B: The Context Paste (Free Users)**
-1.  Open a fresh chat.
-2.  Copy **ALL** text from `instructions.txt` and paste it.
-3.  Type: *"I am now providing your Knowledge Base."*
-4.  Copy **ALL** text from `techs.txt` and paste it.
-5.  Start asking your questions.
-
----
 
 ### ⚫ Grok (xAI)
 
