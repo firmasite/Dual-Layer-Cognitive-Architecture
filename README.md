@@ -111,6 +111,8 @@ Once set up, you don't need to do anything special. Just ask a normal question.
 3.  **[FILTER] Feasibility:** Removes fluff, focuses on the data points.
 4.  **[ACT] Action:** Triggers **Tool 4: Code Interpreter** to execute Python code that plots the graph.
 
+---
+
 ## 📄 License
 MIT License. Free to use, modify, and share.
 
