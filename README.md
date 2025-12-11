@@ -1,7 +1,3 @@
-Here is the updated `README.md`. I have rewritten it to align with the new **Tri-Layer Architecture** (Identity, Logic, Action) defined in `instructions.txt` and integrated the new `tools.txt` library into the installation steps.
-
-***
-
 # 🧬 Cognitive Architecture
 
 > **Turn your generic AI chatbot into a Senior Expert with structured reasoning and tool execution.**
