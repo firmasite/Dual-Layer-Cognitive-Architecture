@@ -1,44 +1,40 @@
 # 🧬 Cognitive Architecture
 
-### Your All-in-One Team of Experts
+> **"Think first. Squad up. Get it done."**
 
-**"Imagine having a team of experts with 20+ years of experience for any task you have."**
+Welcome to the home of the **Super Squad AI Agent**! This is a highly disciplined, multi-persona AI designed to "think before it speaks" and handle complex tasks with the expertise of a 20-year veteran.
 
------
+## 🤔 What is this?
 
-## 👋 What is this?
+Most AI agents jump straight to an answer. This agent is different. It follows a strict **9-step reasoning protocol** to ensure every action is calculated, accurate, and helpful.
 
-This is a custom setup for an AI agent. Unlike normal chatbots that answer immediately, this agent acts like a careful professional. It takes a moment to **plan and think** before it speaks or acts.
+It operates on a simple philosophy: **Analyze $\rightarrow$ Strategize $\rightarrow$ Act.**
 
-Its main goal is to work with you to get the job done perfectly using real, proven information.
+## ⚙️ How It Works (The Logic)
 
-## 🌟 Key Features
+We've built a "brain" for this agent that forces it to slow down and process information correctly. Here is the flow it follows for every single request:
 
-### 1\. It Sees the Big Picture (Multimodal)
+### 1. The "Deep Dive" Analysis
+Before saying a word, the agent analyzes your request—not just your literal words, but your intent. If you send images or files, it connects them to the task immediately rather than just describing them.
 
-When you send an image, video, or link, the Super Squad doesn't just look at it.
+### 2. Squad Mode: On 🚀
+Once the goal is defined, the agent adopts a specific **Persona** (or a whole squad of them!).
+* *Need code?* It becomes a Senior Engineer.
+* *Need a logo?* It becomes a Veteran Designer.
+* *Need both?* It becomes a **Super Squad** of experts with 20+ years of experience.
 
-  * **Images:** It connects visual details to your specific goal rather than just describing what is there.
-  * **Documents:** It reads PDFs and actually interprets the charts and tables inside to synthesize answers.
-  * **Videos & URLs:** It analyzes content to find patterns that match your request.
+### 3. Facts Over Fiction
+* **Real Info > Imagination:** It prefers using real documents, images, and tools over making things up.
+* **Visuals > Text:** If it can show you a chart, graph, or image, it will do that instead of writing a wall of text.
 
-### 2\. It Does the Heavy Lifting
+### 4. Tool-First Approach
+Why ask you for info if it can find it itself? This agent is proactive. It prefers using its available tools and extensions to gather context before bothering you with questions.
 
-  * **Tool First:** If the AI can find the answer itself (using a tool or file), it will do that instead of bothering you with questions.
-  * **Real Info:** It prioritizes real data over imagination.
-
-### 3\. It Doesn't Give Up
-
-  * **Persistence:** If something goes wrong (like a technical error), it will try again intelligently.
-  * **Smart Retries:** It won't just repeat the same mistake; if a method fails, it changes its strategy to solve the problem.
-
-
-## 🛠️ How to Use This
-
-https://grok.com/project/faa3a8b1-85f7-4cca-9c9b-a0bb290dae32
-
-https://gemini.google.com/gem/1qIsLlu0ZEkpawNfNRawG5AG4tCILqnBl?usp=sharing
-
+### 5. Intelligent Persistence 💪
+This agent is stubborn in a good way.
+* **It doesn't give up** on transient errors (like a network glitch).
+* **It learns:** If a strategy fails, it changes its approach rather than repeating the same mistake.
+* **It knows its limits:** It will retry intelligently, but if it hits a hard limit, it stops to save resources.
 
 ---
 
@@ -48,8 +44,5 @@ MIT License. Free to use, modify, and share.
 ---
 
 ## Special Thanks
-* Louis Gleeson for first prompting techniques;
-https://x.com/aigleeson
-
 * Emily for inspirations for the instructions;
 https://x.com/IamEmily2050
