@@ -1,48 +1,88 @@
-# 🧬 Cognitive Architecture
+# 🧬 Dual Layer Cognitive Architecture (The "Super Squad" Protocol)
 
 > **"Think first. Squad up. Get it done."**
 
-Welcome to the home of the **Super Squad AI Agent**! This is a highly disciplined, multi-persona AI designed to "think before it speaks" and handle complex tasks with the expertise of a 20-year veteran.
+![License](https://img.shields.io/badge/license-MIT-blue.svg) ![Type](https://img.shields.io/badge/Type-System%20Prompt-green) ![Model](https://img.shields.io/badge/Compatible%20with-Gemini%20%7C%20GPT--4%20%7C%20Claude-orange)
 
-## 🤔 What is this?
+## 📖 Overview
 
-Most AI agents jump straight to an answer. This agent is different. It follows a strict **9-step reasoning protocol** to ensure every action is calculated, accurate, and helpful.
+This repository houses the **Dual Layer Cognitive Architecture**, a sophisticated system prompt designed to transform standard Large Language Models (LLMs) into a disciplined **"Super Squad" of experts**. 
 
-It operates on a simple philosophy: **Analyze $\rightarrow$ Strategize $\rightarrow$ Act.**
+Unlike standard prompts that encourage immediate answers, this architecture forces the AI to decouple **Reasoning** from **Generation**. It implements a strict 9-step protocol to ensure every response is analyzed, strategized, and fact-checked before a single word of the final answer is written.
 
-## ⚙️ How It Works (The Logic)
+## 🚀 Key Features
 
-We've built a "brain" for this agent that forces it to slow down and process information correctly. Here is the flow it follows for every single request:
+The core logic (found in `instructions.txt`) enforces the following behaviors:
 
-### 1. The "Deep Dive" Analysis
-Before saying a word, the agent analyzes your request—not just your literal words, but your intent. If you send images or files, it connects them to the task immediately rather than just describing them.
+### 1. 🎭 Dynamic Persona Adoption ("The Squad")
+The AI does not act as a generic assistant. It analyzes the task and adopts the specific persona (or team of personas) required.
+* *Coding task?* $\rightarrow$ **Senior Principal Engineer (20+ Years Exp)**
+* *Design task?* $\rightarrow$ **Veteran UX/UI Designer**
+* *Complex task?* $\rightarrow$ **A full "Super Squad" of cross-functional experts**
 
-### 2. Squad Mode: On 🚀
-Once the goal is defined, the agent adopts a specific **Persona** (or a whole squad of them!).
-* *Need code?* It becomes a Senior Engineer.
-* *Need a logo?* It becomes a Veteran Designer.
-* *Need both?* It becomes a **Super Squad** of experts with 20+ years of experience.
+### 2. 🧠 Dual-Layer Reasoning
+The architecture enforces a "Silent Thought" phase before the "Response" phase:
+1.  **Analysis Layer:** Deconstructs the user's request, identifying implicit constraints and required proofs.
+2.  **Strategy Layer:** Determines if the task needs sequential (A $\rightarrow$ B) or parallel (A + B $\rightarrow$ C) logic.
+3.  **Execution Layer:** Only generates content after the reasoning is complete.
 
-### 3. Facts Over Fiction
-* **Real Info > Imagination:** It prefers using real documents, images, and tools over making things up.
-* **Visuals > Text:** If it can show you a chart, graph, or image, it will do that instead of writing a wall of text.
+### 3. 🛠️ Tool-First Philosophy
+* **Proactive Execution:** The model is instructed to *prefer* calling tools (Search, Code Execution) over asking the user for clarification.
+* **Real Data > Hallucination:** It prioritizes real-time data fetching over imaginative gap-filling.
 
-### 4. Tool-First Approach
-Why ask you for info if it can find it itself? This agent is proactive. It prefers using its available tools and extensions to gather context before bothering you with questions.
+### 4. 🛡️ Intelligent Persistence
+* **Resilience:** The agent is programmed to retry transient errors automatically.
+* **Adaptability:** If a tool fails, it formulates a *new* strategy rather than repeating the same failed call.
 
-### 5. Intelligent Persistence 💪
-This agent is stubborn in a good way.
-* **It doesn't give up** on transient errors (like a network glitch).
-* **It learns:** If a strategy fails, it changes its approach rather than repeating the same mistake.
-* **It knows its limits:** It will retry intelligently, but if it hits a hard limit, it stops to save resources.
+## 📂 Repository Contents
 
----
+* **`instructions.txt`**: The core System Prompt. This is the "source code" of the cognitive architecture.
+* **`README.md`**: Documentation (You are here).
 
-## 📄 License
-MIT License. Free to use, modify, and share.
+## ⚡ How to Use
 
----
+This is a **System Instruction**, not a Python library. You "install" it by feeding it to your AI model's context.
 
-## Special Thanks
-* Emily for inspirations for the instructions;
-https://x.com/IamEmily2050
+### Option 1: API / Developer Usage
+If you are building an app using OpenAI API, Anthropic API, or Google Gemini API, paste the content of `instructions.txt` into the `system` parameter.
+
+```python
+# Example pseudo-code for OpenAI/Gemini
+messages = [
+    {"role": "system", "content": open("instructions.txt").read()},
+    {"role": "user", "content": "Analyze this stock market data."}
+]
+````
+
+### Option 2: ChatGPT / Gemini Advanced
+
+1.  Open **Custom Instructions** (ChatGPT) or **System Instructions** (AI Studio).
+2.  Copy the raw text from `instructions.txt`.
+3.  Paste it into the "How would you like ChatGPT to respond?" or "System Instructions" field.
+
+## 📝 The 9-Step Protocol
+
+The architecture strictly enforces these steps:
+
+1.  **Adopt Personas** (Expert level)
+2.  **Analyze Request** (Beyond literal words)
+3.  **Prefer Tools** (Don't be lazy)
+4.  **Identify Missing Info** (Stop and ask if critical)
+5.  **Use Real Information** (No speculation)
+6.  **Prefer Visualization** (Charts/Graphs \> Text)
+7.  **Check Info Availability** (Policies, history, tools)
+8.  **Persistence** (Intelligent retries)
+9.  **Inhibit Final Response** (Reasoning phase first)
+
+## 🤝 Contributing
+
+Contributions are welcome\! If you have improvements for the prompting logic (e.g., better chain-of-thought triggers or stricter constraints), feel free to open a Pull Request.
+
+## 📜 License
+
+This project is licensed under the **MIT License** - see the LICENSE file for details.
+
+-----
+
+*Inspired by the need for more reliable, agentic AI behavior.*
+
