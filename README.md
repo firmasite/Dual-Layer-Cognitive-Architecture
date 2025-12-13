@@ -1,4 +1,4 @@
-# 🧬 Dual Layer Cognitive Architecture (The "Super Squad" Protocol)
+# 🧬 Cognitive Architecture (The "Super Squad" Protocol)
 
 > **"Think first. Squad up. Get it done."**
 
